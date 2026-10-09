@@ -1,11 +1,231 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>My Learning Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">MyWebsite</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="bg-light text-center py-5">
+        <div class="container">
+
+            <h1 class="display-4 fw-bold">Welcome to My Website</h1>
+
+            <p class="lead mt-3">
+                Learn new skills and explore new opportunities with us.
+            </p>
+
+            <a href="#about" class="btn btn-primary btn-lg mt-2">
+                Learn More
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+
+            <h2 class="text-center mb-4">About Us</h2>
+
+            <p class="text-center">
+                Our website helps students learn new skills and improve
+                their knowledge. We provide useful information about
+                technology, education, and personal development.
+                Our goal is to make learning simple and interesting
+                for everyone.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+
+            <h2 class="text-center mb-4">Our Services</h2>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Web Development</h5>
+
+                            <p class="card-text">
+                                Learn the basics of HTML, CSS, and Bootstrap
+                                to create beautiful websites.
+                            </p>
+
+                            <a href="#contact" class="btn btn-primary">
+                                Explore
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Education</h5>
+
+                            <p class="card-text">
+                                Discover useful learning resources and
+                                improve your academic knowledge.
+                            </p>
+
+                            <a href="#contact" class="btn btn-primary">
+                                Explore
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Digital Skills</h5>
+
+                            <p class="card-text">
+                                Develop computer skills and learn about
+                                modern digital technologies.
+                            </p>
+
+                            <a href="#contact" class="btn btn-primary">
+                                Explore
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+
+            <h2 class="text-center mb-4">Contact Us</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">
+                                Your Name
+                            </label>
+
+                            <input type="text" class="form-control"
+                                   id="name" placeholder="Enter your name"
+                                   required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">
+                                Email Address
+                            </label>
+
+                            <input type="email" class="form-control"
+                                   id="email" placeholder="Enter your email"
+                                   required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">
+                                Message
+                            </label>
+
+                            <textarea class="form-control" id="message"
+                                      rows="4"
+                                      placeholder="Write your message"
+                                      required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2026 MyWebsite. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
